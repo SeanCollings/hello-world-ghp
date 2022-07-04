@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/SeanCollings/hello-world-ghp/issues"
   },
-  "homepage": "https://github.com/SeanCollings/hello-world-ghp#readme"
+  "homepage": "https://github.com/SeanCollings/hello-world-ghp#readme",
+  "publishConfig": {
+    "@seancollings:registry": "https://npm.pkg.github.com"
+  }
 }
