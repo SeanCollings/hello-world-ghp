@@ -1,1 +1,1 @@
-alert('Hello, World! v2');
+export const logger = () => console.log('Hello, World! v1.0.5');
