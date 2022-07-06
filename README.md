@@ -1,3 +1,3 @@
 # hello-world-ghp
 
-GitHub Package
+GitHub Package - ci and publish
