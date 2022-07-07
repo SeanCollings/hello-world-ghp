@@ -1,10 +1,14 @@
 {
   "name": "@seancollings/hello-world-ghp",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Test repo for github packages",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "tsc --project tsconfig.build.json",
     "test": "exit 0",
+    "prepublish": "npm run build",
     "deploy": "npm publish"
   },
   "repository": {
@@ -19,5 +23,15 @@
   "homepage": "https://github.com/SeanCollings/hello-world-ghp#readme",
   "publishConfig": {
     "@seancollings:registry": "https://npm.pkg.github.com"
+  },
+  "files": [
+    "dist/*",
+    "dist/**/*"
+  ],
+  "devDependencies": {
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "@tootallnate/once": "^3.0.0"
   }
 }
