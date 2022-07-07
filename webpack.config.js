@@ -3,12 +3,14 @@ const path = require('path');
 const nodeExternals = require('webpack-node-externals');
 
 module.exports = {
+  mode: 'production',
   target: 'node',
   externals: [nodeExternals()],
-  entry: './src/logger.ts',
+  entry: './src/index.ts',
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'index.js',
+    libraryTarget: 'umd',
   },
   optimization: {
     minimize: false,

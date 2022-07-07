@@ -11,7 +11,6 @@
     "paths": {
       "@/*": ["src/*"]
     },
-    "resolveJsonModule": true /* Enable importing .json files. */,
 
     /* Emit */
     "outDir": "./dist" /* Specify an output folder for all emitted files. */,
