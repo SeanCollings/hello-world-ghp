@@ -1,1 +1,2 @@
-export const logger = () => console.log('Hello, World! v1.0.6');
+export const logger = (version?: string) =>
+  console.log(`Hello, World!${version ? ` at version: ${version}` : ''}`);

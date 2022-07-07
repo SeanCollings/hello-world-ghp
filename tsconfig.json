@@ -2,9 +2,6 @@
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig to read more about this file */
 
-    /* Projects */
-    "incremental": true /* Save .tsbuildinfo files to allow for incremental compilation of projects. */,
-
     /* Language and Environment */
     "target": "es2017" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */,
 
@@ -17,7 +14,6 @@
     "resolveJsonModule": true /* Enable importing .json files. */,
 
     /* Emit */
-    "sourceMap": true /* Create source map files for emitted JavaScript files. */,
     "outDir": "./dist" /* Specify an output folder for all emitted files. */,
     "declaration": true,
 
