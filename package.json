@@ -1,12 +1,13 @@
 {
   "name": "@seancollings/hello-world-ghp",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "description": "Test repo for github packages",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
     "prebuild": "rimraf dist",
-    "build": "tsc -p tsconfig.declaration.json & webpack & tsc-alias -p tsconfig.aliases.json",
+    "build": "webpack",
+    "postbuild": "tsc-alias",
     "test": "exit 0",
     "prepublish": "npm run build",
     "deploy": "npm publish"
