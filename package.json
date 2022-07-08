@@ -1,12 +1,12 @@
 {
   "name": "@seancollings/hello-world-ghp",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "Test repo for github packages",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
     "prebuild": "rimraf dist",
-    "build": "webpack --mode=production",
+    "build": "webpack & tsc-alias -p tsconfig.aliases.json",
     "test": "exit 0",
     "prepublish": "npm run build",
     "deploy": "npm publish"
@@ -31,6 +31,7 @@
   "devDependencies": {
     "rimraf": "^3.0.2",
     "ts-loader": "^9.3.1",
+    "tsc-alias": "^1.6.11",
     "webpack": "^5.73.0",
     "webpack-cli": "^4.10.0",
     "webpack-node-externals": "^3.0.0"
