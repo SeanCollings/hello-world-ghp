@@ -1,4 +1,4 @@
-import { ExtraClass } from '@/extra/extra.here';
+import { ExtraClass } from './extra/extra.here';
 
 export const logger = (version?: string) =>
   console.log(
