@@ -6,7 +6,7 @@
   "typings": "dist/index.d.ts",
   "scripts": {
     "prebuild": "rimraf dist",
-    "build": "webpack & tsc-alias -p tsconfig.aliases.json",
+    "build": "tsc -p tsconfig.declaration.json & webpack & tsc-alias -p tsconfig.aliases.json",
     "test": "exit 0",
     "prepublish": "npm run build",
     "deploy": "npm publish"
