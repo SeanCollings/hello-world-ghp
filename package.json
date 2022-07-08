@@ -1,6 +1,6 @@
 {
   "name": "@seancollings/hello-world-ghp",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "Test repo for github packages",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
